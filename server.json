@@ -1,0 +1,10 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ANAMIZED/desk",
+  "description": "ANAMIZED desk: live catalog, MCP listings, Stripe checkout for agents.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/ANAMIZED/desk",
+    "source": "github"
+  }
+}

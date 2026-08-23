@@ -2,9 +2,54 @@
 
 **Autonomous systems. Commercial access.**
 
-The commercial front door for ANAMIZED: fail-closed agentic operating systems, MCP servers, grants tooling, consulting, and public-goods support.
+The commercial front door for ANAMIZED: fail-closed agentic operating systems, MCP servers, grants tooling, a digital consulting hour, and public-goods support.
 
 Checkout is **live Stripe**. Repos are on [github.com/ANAMIZED](https://github.com/ANAMIZED).
+
+The store itself is agent-discoverable: MCP, REST, SKILL.md, AGENTS.md, llms.txt, and a CLI — same catalog humans see.
+
+---
+
+## Agent discovery
+
+Registry name: `io.github.ANAMIZED/desk`
+
+On the live desk origin:
+
+| Surface | Path |
+|---------|------|
+| MCP (Streamable HTTP) | `/mcp` |
+| Catalog JSON | `/api/v1/catalog` |
+| OpenAPI | `/api/v1/openapi.json` |
+| SKILL.md | `/SKILL.md` |
+| AGENTS.md | `/AGENTS.md` |
+| llms.txt | `/llms.txt` |
+| server.json | `/server.json` |
+| Well-known MCP | `/.well-known/mcp.json` |
+| Human index | `/agents` |
+
+MCP tools: `list_offers`, `get_offer`, `list_systems`, `list_mcp_servers`, `checkout_link`, `search_catalog`, `discovery`.
+
+Cursor / Claude snippet (replace the origin with the live desk):
+
+```json
+{
+  "mcpServers": {
+    "anamized-desk": { "url": "https://<desk-origin>/mcp" }
+  }
+}
+```
+
+CLI:
+
+```bash
+node scripts/desk.mjs catalog --url https://<desk-origin>
+node scripts/desk.mjs offer consulting
+node scripts/desk.mjs checkout yodmcp-pro
+node scripts/desk.mjs call list_offers '{"kind":"subscription"}'
+```
+
+No API key to browse. Checkout links are live Stripe. After payment the buyer signs in on the desk and syncs so seats, Studio credits, or a consulting hour unlock.
 
 ---
 
@@ -21,9 +66,11 @@ Checkout is **live Stripe**. Repos are on [github.com/ANAMIZED](https://github.c
 
 ### Consulting
 
+Digital hour — no calendar. The desk answers every inquiry in writing for 60 minutes.
+
 | Product | Price | Checkout |
 |---------|-------|----------|
-| **Agentic Systems Consulting Hour** | $199 | [Book](https://buy.stripe.com/dRmaEYgjA9Hnf7LdjG43S0b) |
+| **Consulting Hour** | $199 | [Buy the hour](https://buy.stripe.com/dRmaEYgjA9Hnf7LdjG43S0b) |
 
 ### Pay-per-use
 
