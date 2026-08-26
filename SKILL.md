@@ -22,6 +22,7 @@ Do not invent prices or SKUs. Read the live catalog on the desk origin.
 - llms.txt: `/llms.txt`
 - Human page: `/agents`
 - CLI: `node scripts/desk.mjs catalog --url <desk-origin>`
+- Agent x402 catalog: [x402-cloudflare-starter](https://github.com/ANAMIZED/x402-cloudflare-starter) `GET /v1/catalog`
 
 ## MCP tools
 
@@ -39,7 +40,7 @@ POST JSON-RPC `tools/call` to `/mcp`.
 
 ## Checkout rules
 
-Payment links are live Stripe. After payment the human signs in on the desk and syncs purchases so seats, Studio credits, or a consulting hour unlock. Do not claim a purchase is fulfilled until the desk account shows it.
+Payment links are live Stripe. Agents may instead pay USDC via x402 on `/v1/cycle`, `/v1/search`, `/v1/draft`. An x402 200 is a receipt only. After payment the human signs in on the desk and syncs purchases so seats, Studio credits, or a consulting hour unlock. Do not claim a purchase is fulfilled until the desk account shows it.
 
 Consulting is digital-only: no calendar. A paid hour is answered in writing on `/consulting`.
 
