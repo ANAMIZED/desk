@@ -15,6 +15,7 @@ ANAMIZED desk: live catalog, MCP listings, Stripe checkout for agents.
 | llms.txt | `/llms.txt` |
 | server.json | `/server.json` |
 | Well-known MCP | `/.well-known/mcp.json` |
+| WebMCP page | `web/index.html` (`document.modelContext`) |
 | CLI | `node scripts/desk.mjs --url <desk-origin>` |
 
 Registry name: `io.github.ANAMIZED/desk`
@@ -29,7 +30,9 @@ POST JSON-RPC 2.0 to `/mcp`.
 
 No auth on the catalog. Checkout is a Stripe URL for a human.
 
-## MCP tools
+Browser agents that only have the page: use WebMCP tools registered by `web/desk-webmcp.js`. Same names as MCP. `checkout_link` requires human confirmation and never charges.
+
+## MCP / WebMCP tools
 
 - `list_offers`
 - `get_offer`
@@ -38,6 +41,8 @@ No auth on the catalog. Checkout is a Stripe URL for a human.
 - `checkout_link`
 - `search_catalog`
 - `discovery`
+
+See `WEBMCP.md`.
 
 ## Fulfillment
 
