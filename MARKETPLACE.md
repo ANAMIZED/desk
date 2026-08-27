@@ -2,15 +2,17 @@
 
 Official MCP Registry is already live for servers under `io.github.ANAMIZED/*`.
 
-## Status 2026-08-26 (Revenue Scout implement)
+## Status 2026-08-27 (Revenue Scout implement)
 
 | Surface | State |
 |---------|--------|
 | Official MCP Registry | Live — do not re-claim without evidence |
+| x402 Trading Cycle $4 | Shipped in-repo — `GET /v1/trading` parallels [Stripe](https://buy.stripe.com/bJedRaebsaLr2kZ2F243S05). Worker deploy is host-owned. |
 | Glama OpenGOS | **Unclaimed** — host OAuth at https://glama.ai/mcp/servers/ANAMIZED/OpenGOS |
-| Glama YodMCP / NeedRail | Claim via GitHub OAuth on glama.ai |
+| Glama YodMCP / NeedRail / OpenMesha | Claim via GitHub OAuth on glama.ai |
 | mcp.so | Host submits `[Submit]` issues on `chatmcp/mcpso` |
 | awesome-mcp-servers PRs | **Blocked** — GitHub App `403 Resource not accessible by integration` |
+| Stripe live | 0 charges / 0 subscriptions as of 2026-08-27 — first-dollar path is Search $0.40 |
 
 Forks/branches are already pushed. Open these while signed in as ANAMIZED:
 
