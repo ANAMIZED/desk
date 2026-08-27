@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ANAMIZED Desk — WebMCP catalog</title>
+  <style>
+    :root { --bg:#0B0D10; --ink:#E8E4DA; --dim:#8B8678; --accent:#C4A35A; --line:#2A2E36; --panel:#14181E; }
+    * { box-sizing: border-box; }
+    body { margin:0; font:15px/1.5 ui-sans-serif, system-ui, sans-serif; background:var(--bg); color:var(--ink); }
+    main { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+    h1 { font-size: 22px; letter-spacing: .04em; }
+    h1 span { color: var(--accent); }
+    p, li { color: var(--ink); }
+    .dim { color: var(--dim); }
+    code { font: 13px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--accent); }
+    .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; margin: 16px 0; }
+    input { width: 100%; background:#0B0D10; color:var(--ink); border:1px solid var(--line); border-radius:8px; padding:8px 10px; }
+    label { display:block; font-size:12px; color:var(--dim); margin-bottom:6px; }
+    #webmcp-status { font-size:13px; color:var(--accent); }
+    #webmcp-log { white-space:pre-wrap; font:12px/1.4 ui-monospace,monospace; color:var(--dim); max-height:180px; overflow:auto; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+<main>
+  <h1>ANAMIZED <span>Desk</span></h1>
+  <p>Commercial catalog for agentic OS kernels and MCP servers. Humans use this page. Browser agents use <code>document.modelContext</code>.</p>
+  <p class="dim">MCP remains the system of record at <code>/mcp</code>. WebMCP is a page-level subset: list, search, discover, and a confirmed checkout <em>link</em>. No silent charges.</p>
+  <div class="panel"><div id="webmcp-status">Detecting WebMCP…</div></div>
+  <div class="panel">
+    <label for="desk-origin">Live desk origin (optional — leave blank to use this host or the offline catalog)</label>
+    <input id="desk-origin" placeholder="https://your-desk-origin.example">
+  </div>
+  <div class="panel"><strong>Offers</strong><ul id="offer-list"></ul></div>
+  <div class="panel">
+    <strong>Registered tools</strong>
+    <p class="dim"><code>list_offers</code> · <code>get_offer</code> · <code>list_systems</code> · <code>list_mcp_servers</code> · <code>search_catalog</code> · <code>discovery</code> · <code>checkout_link</code> (confirm)</p>
+  </div>
+  <div class="panel"><strong>Agent log</strong><div id="webmcp-log"></div></div>
+  <p class="dim">Source: <a href="https://github.com/ANAMIZED/desk">ANAMIZED/desk</a> · MCP registry <code>io.github.ANAMIZED/desk</code></p>
+</main>
+<script src="webmcp.js"></script>
+<script src="desk-webmcp.js"></script>
+</body>
+</html>
