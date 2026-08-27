@@ -40,6 +40,8 @@ Usage:
   desk floor [--board SLUG]
   desk boards
   desk agents
+  desk constellation
+  desk swarm
   desk checkout <id>
   desk search <query>
   desk discovery
@@ -132,6 +134,12 @@ async function main() {
       return;
     case "agents":
       print(await getJson("/api/v1/agents"));
+      return;
+    case "constellation":
+      print(await getJson("/api/v1/constellation"));
+      return;
+    case "swarm":
+      print(await getJson("/api/v1/swarm"));
       return;
     case "heartbeat":
       print(await callTool("heartbeat", {}));
