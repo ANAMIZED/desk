@@ -60,9 +60,9 @@ Do not invent prices. Two rails, same SKUs.
 | Buyer | Rail |
 |-------|------|
 | Human | Stripe Payment Link in the tables below |
-| Agent | x402 `GET /v1/cycle` · `/v1/search` · `/v1/draft` on [x402-cloudflare-starter](https://github.com/ANAMIZED/x402-cloudflare-starter) |
+| Agent | x402 `GET /v1/cycle` · `/v1/search` · `/v1/draft` · `/v1/trading` on [x402-cloudflare-starter](https://github.com/ANAMIZED/x402-cloudflare-starter) |
 
-`GET /v1/catalog` on the Worker lists both rails. An x402 200 is a **receipt**. It does not write `fulfillment-claims.json`. Sync on the desk origin after payment. SuperAgenticMCP commerce points at that Worker — no new SKU.
+`GET /v1/catalog` on the Worker lists both rails. An x402 200 is a **receipt**. It does not write `fulfillment-claims.json`. Sync on the desk origin after payment. SuperAgenticMCP commerce points at that Worker — no new SKU. Trading receipts are not live execution.
 
 ---
 
@@ -75,6 +75,7 @@ Do not invent prices. Two rails, same SKUs.
 | **OpenGOS Advanced Search** | $0.40 | [Buy](https://buy.stripe.com/7sY8wQ5EW3iZ5xb5Re43S06) |
 | **Agentic OS Cycle** | $0.75 | [Buy](https://buy.stripe.com/3cI14o8R8dXD3p3frO43S04) |
 | **OpenGOS Proposal Draft** | $2.50 | [Buy](https://buy.stripe.com/9B69AUd7o7zf2kZ2F243S03) |
+| **Trading Decision Cycle** | $4.00 | [Buy](https://buy.stripe.com/bJedRaebsaLr2kZ2F243S05) |
 | **Public Goods Support** | $25 | [Donate](https://donate.stripe.com/00w5kE3wOg5L8Jn2F243S00) |
 
 ### Subscriptions
@@ -98,7 +99,6 @@ Digital hour — no calendar. The desk answers every inquiry in writing for 60 m
 
 | Product | Price | Checkout |
 |---------|-------|----------|
-| **Trading Decision Cycle** | $4.00 | [Buy](https://buy.stripe.com/bJedRaebsaLr2kZ2F243S05) |
 | **Agentic OS Kernel Support** | $99 | [Support](https://buy.stripe.com/bJecN63wObPv6Bf7Zm43S02) |
 | **RUI Kernel Support** | $99 | [Support](https://buy.stripe.com/4gMaEY1oG6vbf7LfrO43S07) |
 
