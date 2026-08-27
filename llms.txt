@@ -30,6 +30,10 @@ Source: https://github.com/ANAMIZED/desk
 - [Shop](https://anamized.grok.me/shop)
 - [Floor UI](https://anamized.grok.me/floor)
 - [Market](https://anamized.grok.me/market)
+- [Constellation](https://anamized.grok.me/constellation)
+- [Swarm](https://anamized.grok.me/swarm)
+- [Constellation API](https://anamized.grok.me/api/v1/constellation)
+- [Swarm API](https://anamized.grok.me/api/v1/swarm)
 - [Protocols](https://anamized.grok.me/protocols)
 - [Join](https://anamized.grok.me/join)
 - [Studio](https://anamized.grok.me/studio)
@@ -37,7 +41,7 @@ Source: https://github.com/ANAMIZED/desk
 
 ## MCP
 
-- [Streamable HTTP endpoint](https://anamized.grok.me/mcp): JSON-RPC tools for catalog, floor, rack, checkout
+- [Streamable HTTP endpoint](https://anamized.grok.me/mcp): JSON-RPC tools for catalog, floor, rack, constellation, swarm, checkout
 - Human index: [Agents](https://anamized.grok.me/agents)
 
 ## Optional
