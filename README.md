@@ -8,6 +8,8 @@ Checkout is **live Stripe** for humans and **x402 USDC** for agents. Repos are o
 
 The store itself is agent-discoverable: MCP, REST, SKILL.md, AGENTS.md, llms.txt, and a CLI — same catalog humans see.
 
+Live origin: [anamized.grok.me](https://anamized.grok.me)
+
 ---
 
 ## Agent discovery
@@ -27,15 +29,18 @@ On the live desk origin:
 | server.json | `/server.json` |
 | Well-known MCP | `/.well-known/mcp.json` |
 | Human index | `/agents` |
+| Floor | `/floor` |
+| Market | `/market` |
+| Protocols | `/protocols` |
 
 MCP tools: `list_offers`, `get_offer`, `list_systems`, `list_mcp_servers`, `checkout_link`, `search_catalog`, `discovery`.
 
-Cursor / Claude snippet (replace the origin with the live desk):
+Cursor / Claude snippet:
 
 ```json
 {
   "mcpServers": {
-    "anamized-desk": { "url": "https://<desk-origin>/mcp" }
+    "anamized-desk": { "url": "https://anamized.grok.me/mcp" }
   }
 }
 ```
@@ -43,7 +48,7 @@ Cursor / Claude snippet (replace the origin with the live desk):
 CLI:
 
 ```bash
-node scripts/desk.mjs catalog --url https://<desk-origin>
+node scripts/desk.mjs catalog --url https://anamized.grok.me
 node scripts/desk.mjs offer consulting
 node scripts/desk.mjs checkout yodmcp-pro
 node scripts/desk.mjs call list_offers '{"kind":"subscription"}'
@@ -62,7 +67,7 @@ Do not invent prices. Two rails, same SKUs.
 | Human | Stripe Payment Link in the tables below |
 | Agent | x402 `GET /v1/cycle` · `/v1/search` · `/v1/draft` · `/v1/trading` on [x402-cloudflare-starter](https://github.com/ANAMIZED/x402-cloudflare-starter) |
 
-`GET /v1/catalog` on the Worker lists both rails. An x402 200 is a **receipt**. It does not write `fulfillment-claims.json`. Sync on the desk origin after payment. SuperAgenticMCP commerce points at that Worker — no new SKU. Trading receipts are not live execution.
+`GET /v1/catalog` on the Worker lists both rails. An x402 200 is a **receipt**. It does not write `fulfillment-claims.json`. Sync on the desk origin after payment. SuperAgenticMCP commerce points at that Worker — no new SKU. Trading receipts are not live execution. ARSIC is paper-only.
 
 ---
 
@@ -111,6 +116,11 @@ Digital hour — no calendar. The desk answers every inquiry in writing for 60 m
 | YodMCP | [ANAMIZED/YodMCP](https://github.com/ANAMIZED/YodMCP) |
 | OpenGOS | [ANAMIZED/OpenGOS](https://github.com/ANAMIZED/OpenGOS) |
 | RUI | [ANAMIZED/Recursive-UltraIntelligence-RUI](https://github.com/ANAMIZED/Recursive-UltraIntelligence-RUI) |
+| Proto-OS | [ANAMIZED/Proto-OS](https://github.com/ANAMIZED/Proto-OS) |
+| ARSIC | [ANAMIZED/ARSIC](https://github.com/ANAMIZED/ARSIC) |
+| OMSP | [ANAMIZED/OMSP](https://github.com/ANAMIZED/OMSP) |
+| NeedRail | [ANAMIZED/NeedRail](https://github.com/ANAMIZED/NeedRail) |
+| SuperAgenticMCP | [ANAMIZED/SuperAgenticMCP](https://github.com/ANAMIZED/SuperAgenticMCP) |
 | Edge-OS | [ANAMIZED/Edge-OS](https://github.com/ANAMIZED/Edge-OS) |
 | AgenticArb | [ANAMIZED/AgenticArb](https://github.com/ANAMIZED/AgenticArb) |
 | LRSI | [ANAMIZED/LRSI](https://github.com/ANAMIZED/LRSI) |
