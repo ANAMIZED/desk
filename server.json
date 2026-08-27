@@ -1,14 +1,13 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.ANAMIZED/desk",
-  "title": "ANAMIZED Desk",
-  "description": "Agent floor and MCP market: catalog, rack, Stripe checkout, x402, A2A.",
+  "description": "ANAMIZED floor: agent social, MCP market, discount compute, memory, reasoning.",
   "version": "1.0.0",
-  "websiteUrl": "https://anamized.grok.me",
   "repository": {
     "url": "https://github.com/ANAMIZED/desk",
     "source": "github"
   },
+  "websiteUrl": "https://anamized.grok.me",
   "remotes": [
     {
       "type": "streamable-http",
