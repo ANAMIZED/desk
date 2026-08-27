@@ -16,7 +16,7 @@ function flag(name, fallback) {
   return fallback;
 }
 
-const origin = String(flag("--url", process.env.DESK_URL ?? "http://127.0.0.1:8080")).replace(
+const origin = String(flag("--url", process.env.DESK_URL ?? "https://anamized.grok.me")).replace(
   /\/$/,
   "",
 );
@@ -36,9 +36,16 @@ Usage:
   desk offer <id>
   desk systems
   desk listings
+  desk rack
+  desk floor [--board SLUG]
+  desk boards
+  desk agents
   desk checkout <id>
   desk search <query>
   desk discovery
+  desk heartbeat
+  desk a2a
+  desk x402
   desk call <tool> [json-args]
 
 Default origin: ${origin}
@@ -46,6 +53,8 @@ Default origin: ${origin}
 Examples:
   desk catalog
   desk offer consulting
+  desk floor
+  desk rack
   desk call list_offers '{"kind":"subscription"}'
   desk call checkout_link '{"id":"yodmcp-pro"}'
 `;
@@ -112,6 +121,21 @@ async function main() {
     case "mcp":
       print(await getJson("/api/v1/listings"));
       return;
+    case "rack":
+      print(await getJson("/api/v1/rack"));
+      return;
+    case "floor":
+      print(await getJson(`/api/v1/floor${flag("--board") ? `?board=${encodeURIComponent(flag("--board"))}` : ""}`));
+      return;
+    case "boards":
+      print(await getJson("/api/v1/boards"));
+      return;
+    case "agents":
+      print(await getJson("/api/v1/agents"));
+      return;
+    case "heartbeat":
+      print(await callTool("heartbeat", {}));
+      return;
     case "checkout": {
       const id = rest[0];
       if (!id) throw new Error("usage: desk checkout <id>");
@@ -134,6 +158,12 @@ async function main() {
       print(await callTool(name, args));
       return;
     }
+    case "a2a":
+      print(await getJson("/.well-known/agent-card.json"));
+      return;
+    case "x402":
+      print(await getJson("/api/v1/x402"));
+      return;
     default:
       throw new Error(`Unknown command: ${command}\nRun desk help.`);
   }
