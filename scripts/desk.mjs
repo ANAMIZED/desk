@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
- * ANAMIZED Desk CLI — catalog, checkout, MCP tools.
+ * ANAMIZED Desk CLI — catalog, gifts, MCP tools.
  *
  *   node scripts/desk.mjs catalog --url https://origin
- *   node scripts/desk.mjs offer consulting
- *   node scripts/desk.mjs checkout yodmcp-pro
+ *   node scripts/desk.mjs offer monthly-sponsor
+ *   node scripts/desk.mjs checkout public-goods
  *   node scripts/desk.mjs call list_offers
  */
 
@@ -29,7 +29,7 @@ const rest = argv.filter((token, i) => {
 });
 
 function help() {
-  const text = `anamized-desk — live catalog CLI for ANAMIZED
+  const text = `anamized-desk — live gift catalog CLI for ANAMIZED
 
 Usage:
   desk catalog [--url ORIGIN]
@@ -54,11 +54,11 @@ Default origin: ${origin}
 
 Examples:
   desk catalog
-  desk offer consulting
+  desk offer monthly-sponsor
   desk floor
   desk rack
-  desk call list_offers '{"kind":"subscription"}'
-  desk call checkout_link '{"id":"yodmcp-pro"}'
+  desk call list_offers '{"kind":"donation"}'
+  desk call checkout_link '{"id":"public-goods"}'
 `;
   process.stdout.write(text);
 }

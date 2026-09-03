@@ -19,9 +19,14 @@ Registry name: `io.github.ANAMIZED/desk`
 | MCP (Streamable HTTP) | [https://anamized.grok.me/mcp](https://anamized.grok.me/mcp) |
 | Catalog JSON | [https://anamized.grok.me/api/v1/catalog](https://anamized.grok.me/api/v1/catalog) |
 | Floor | [https://anamized.grok.me/floor](https://anamized.grok.me/floor) |
+| Market | [https://anamized.grok.me/market](https://anamized.grok.me/market) |
+| Support / donate | [https://anamized.grok.me/support](https://anamized.grok.me/support) |
+| Constellation | [https://anamized.grok.me/constellation](https://anamized.grok.me/constellation) |
+| Swarm | [https://anamized.grok.me/swarm](https://anamized.grok.me/swarm) |
 | SKILL.md | [https://anamized.grok.me/SKILL.md](https://anamized.grok.me/SKILL.md) |
 | RULES.md | [https://anamized.grok.me/RULES.md](https://anamized.grok.me/RULES.md) |
 | AGENTS.md | [https://anamized.grok.me/AGENTS.md](https://anamized.grok.me/AGENTS.md) |
+| GitHub Sponsors | [https://github.com/sponsors/ANAMIZED](https://github.com/sponsors/ANAMIZED) |
 
 Cursor / Claude snippet:
 
@@ -41,7 +46,7 @@ Agents must not invent prices or commercial SKUs. If a live origin still lists a
 
 ### Donations (one-time)
 
-| Product | Price | Checkout |
+| Gift | Price | Checkout |
 |---------|-------|----------|
 | **Public Goods Support** | $25 | [Donate](https://donate.stripe.com/00w5kE3wOg5L8Jn2F243S00) |
 | **Agentic OS Kernel Support** | $99 | [Donate](https://buy.stripe.com/bJecN63wObPv6Bf7Zm43S02) |
@@ -49,7 +54,7 @@ Agents must not invent prices or commercial SKUs. If a live origin still lists a
 
 ### Sponsorships (recurring)
 
-| Product | Price | Checkout |
+| Gift | Price | Checkout |
 |---------|-------|----------|
 | **Monthly Sponsor** | $25/mo | [Sponsor](https://donate.stripe.com/dRm28s4AS5r75xb1AY43S0c) |
 | **GitHub Sponsors** | you choose | [github.com/sponsors/ANAMIZED](https://github.com/sponsors/ANAMIZED) |

@@ -8,15 +8,16 @@ WebMCP is a **page-level** tool surface for visiting browser agents (Chrome orig
 |-------|------|
 | MCP (stdio / Streamable HTTP `/mcp`) | System of record |
 | WebMCP (`document.modelContext`) | Front door on a visited page |
-| Stripe / x402 | Payment rails — WebMCP never charges |
+| Stripe donate / GitHub Sponsors / x402 | Gift rails — WebMCP never charges |
 
 Rules:
 
 1. Same tool names as the MCP server when the tool exists there.
 2. Reads first. Writes require `window.confirm`.
-3. `checkout_link` returns a URL. It does not pay.
+3. `checkout_link` returns a donate/sponsor URL. It does not pay. It is not a product checkout.
 4. Feature-detect `document.modelContext || navigator.modelContext`.
 5. If the API is missing, the human page still works.
+6. Offline catalog is donations and sponsorships only. Never invent a commercial SKU.
 
 ## Test
 
