@@ -36,8 +36,8 @@
     checkout: {
       "monthly-sponsor": "https://donate.stripe.com/dRm28s4AS5r75xb1AY43S0c",
       "public-goods": "https://donate.stripe.com/00w5kE3wOg5L8Jn2F243S00",
-      "kernel-support": "https://buy.stripe.com/bJecN63wObPv6Bf7Zm43S02",
-      "rui-kernel": "https://buy.stripe.com/4gMaEY1oG6vbf7LfrO43S07"
+      "kernel-support": "https://donate.stripe.com/bJecN63wObPv6Bf7Zm43S02",
+      "rui-kernel": "https://donate.stripe.com/4gMaEY1oG6vbf7LfrO43S07"
     }
   };
 

@@ -49,8 +49,8 @@ Agents must not invent prices or commercial SKUs. If a live origin still lists a
 | Gift | Price | Checkout |
 |---------|-------|----------|
 | **Public Goods Support** | $25 | [Donate](https://donate.stripe.com/00w5kE3wOg5L8Jn2F243S00) |
-| **Agentic OS Kernel Support** | $99 | [Donate](https://buy.stripe.com/bJecN63wObPv6Bf7Zm43S02) |
-| **RUI Kernel Support** | $99 | [Donate](https://buy.stripe.com/4gMaEY1oG6vbf7LfrO43S07) |
+| **Agentic OS Kernel Support** | $99 | [Donate](https://donate.stripe.com/bJecN63wObPv6Bf7Zm43S02) |
+| **RUI Kernel Support** | $99 | [Donate](https://donate.stripe.com/4gMaEY1oG6vbf7LfrO43S07) |
 
 ### Sponsorships (recurring)
 
